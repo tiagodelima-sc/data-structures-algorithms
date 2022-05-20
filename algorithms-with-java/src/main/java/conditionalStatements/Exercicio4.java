@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -28,6 +28,8 @@ public class Exercicio4 {
 			valorTotal = quantidade * 0.30;
 			System.out.println("Voce comprou: " + quantidade + " macas. O valor total foi de: " + valorTotal);
 		}
+
+		ler.close();
 	}
 
 }

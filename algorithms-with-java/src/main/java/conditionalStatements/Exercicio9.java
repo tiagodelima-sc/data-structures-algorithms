@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -30,5 +30,7 @@ public class Exercicio9 {
 		} else {
 			System.out.println("Maior valor e o: " + valor3);
 		}
+
+		ler.close();
 	}
 }

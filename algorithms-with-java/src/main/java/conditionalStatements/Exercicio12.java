@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -54,7 +54,7 @@ public class Exercicio12 {
 			System.out.println("Por favor, digite um salario valido");
 		}
 		
-		
+		ler.close();
 	}
 
 }

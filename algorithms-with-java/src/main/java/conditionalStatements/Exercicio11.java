@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -40,7 +40,7 @@ public class Exercicio11 {
 			System.out.println("Por favor, selecione o tipo correto de ingresso");
 		}
 		
-		
+		ler.close();
 	}
 	
 	

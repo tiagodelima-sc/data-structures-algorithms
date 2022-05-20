@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -38,5 +38,7 @@ public class Exercicio10 {
 		} else {
 			System.out.println("Os 3 lados nao formam um triangulo");
 		}
+	
+		ler.close();
 	}
 }

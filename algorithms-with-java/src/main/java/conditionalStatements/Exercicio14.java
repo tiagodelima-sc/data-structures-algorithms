@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -40,8 +40,8 @@ public class Exercicio14 {
 			System.out.println("Conceito: E");
 			System.out.println("REPROVADO!");
 		}
-		
-		
+
+		ler.close();
 	}
 
 }

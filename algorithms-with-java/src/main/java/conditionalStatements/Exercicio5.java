@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -61,7 +61,8 @@ public class Exercicio5 {
 		} else {
 			System.out.println("Existem numeros iguais, tente denovo");
 		}
-		
+
+		ler.close();
 	}
 
 }

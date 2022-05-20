@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -30,6 +30,7 @@ public class Exercicio1 {
 			System.out.println("O segundo valor e maior que o segundo");
 		}	
 		
+		ler.close();
 	}
 
 }

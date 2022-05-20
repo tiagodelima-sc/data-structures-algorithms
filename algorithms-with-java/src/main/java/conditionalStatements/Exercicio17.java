@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 /*20. Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
  * “Telefonou para a vítima? “

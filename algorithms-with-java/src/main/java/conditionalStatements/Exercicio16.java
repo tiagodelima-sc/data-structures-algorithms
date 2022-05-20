@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -24,7 +24,8 @@ public class Exercicio16 {
 		} else {
 			System.out.println("Par");
 		}
-		
+
+		ler.close();
 	}
 
 }

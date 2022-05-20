@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -26,7 +26,8 @@ public class Exercicio3 {
 		} else {
 			System.out.println("Acesso Negado");
 		}
-		
+
+		ler.close();
 	}
 
 }

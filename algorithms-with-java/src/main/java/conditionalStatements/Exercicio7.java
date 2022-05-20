@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -47,7 +47,8 @@ public class Exercicio7 {
 			System.out.println("POLIGONO NAO INDENTIFICADO");
 
 		}
-		
+
+		ler.close();
 	}
 
 }

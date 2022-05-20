@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -30,7 +30,7 @@ public class Exercicio2 {
 			System.out.println("Voce nao pode votar");
 		}
 		
-		
+		ler.close();
 	}
 
 }

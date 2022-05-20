@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -45,7 +45,8 @@ public class Exercicio15 {
 			resultado = quantidadeLitros * 0.6;
 			System.out.println("Total de desconto foi de: R$" + resultado);
 		}
-		
+
+		ler.close();
 	}
 
 }

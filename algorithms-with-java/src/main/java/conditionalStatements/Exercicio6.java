@@ -1,4 +1,4 @@
-package ifAndElse;
+package conditionalStatements;
 
 import java.util.Scanner;
 
@@ -39,7 +39,7 @@ public class Exercicio6 {
 			System.out.println("Digite um numero valido");
 		}
 		
-		
+		ler.close();
 	}
 
 }
