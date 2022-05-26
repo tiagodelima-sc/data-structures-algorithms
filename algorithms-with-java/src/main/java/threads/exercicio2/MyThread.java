@@ -2,29 +2,38 @@ package threads.exercicio2;
 
 import java.util.Random;
 
-public class MyThread {
+public class MyThread extends Thread {
 	
 	private static final long TOTAL_NUMEROS = 1_000_000_000L;
+	private final long numerosGerados;
+	
+	public MyThread(long numerosGerados) {
+		this.numerosGerados = numerosGerados;
+		System.out.printf("Thread %d criado\n", getId());
+	}
 	
 	public static void main(String[] args) {
-		
-		new MyThread().run();
+		//se nao for iniciado nenhuma thread, por padrao gerar 1 
+		final int threads = args.length == 0 ? 1 : Integer.valueOf(args[0]);
+		//descobrindo quantos numeros a thread tem que gerar:
+		final long numerosPorThread = (TOTAL_NUMEROS / threads);
+		System.out.printf("Criando %d threads\n", threads);
+		for(int i = 0; i < threads; i++) {
+			new MyThread(numerosPorThread).start();
+		}
 		
 	}
 	
+	@Override
 	public void run() {
-		System.out.println("Iniciando processo de criacao dos numeros: ");
-		//armazenar a hr de quando iniciou
-		final double comecou = System.currentTimeMillis();
+		System.out.println("\nThread Iniciou: " + Thread.currentThread().getId());
 		Random random = new Random();
 		//elevar numeros na potencia de 10
 		double soma = 0;
-		for(int i = 0; i < TOTAL_NUMEROS; i++) {
+		for(int i = 0; i < numerosGerados; i++) {
 			soma += Math.pow(random.nextDouble(), 10);
 		}
-		
-		final double tempoGasto = (System.currentTimeMillis() - comecou) / 1000.0;
-		System.out.printf("Finalizando em %.2f segundos\n", tempoGasto);
+				
 	}
 
 }
