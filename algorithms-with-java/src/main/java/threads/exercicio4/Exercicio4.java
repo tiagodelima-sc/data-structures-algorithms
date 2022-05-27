@@ -61,18 +61,17 @@ public class Exercicio4 extends Thread {
 	}
 
 	public int GetRandomNumber() {
-		// Set max and min
+		
 		int max = 5, min = 3;
 		Random random = new Random();
 
-		// Get Number And Return
 		int RandoNumber = random.nextInt((max - min) + 1) + min;
 
 		return RandoNumber;
 	}
 
 	public static void main(String[] args) {
-		// Instance
+		
 		Exercicio4 MatrizSolverT = new Exercicio4();
 		MatrizSolverT.Thread(MatrizSolverT::Matriz);
 	}
